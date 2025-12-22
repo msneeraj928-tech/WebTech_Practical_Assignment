@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Driven UI</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            width: 420px;
+            margin: 80px auto;
+            text-align: center;
+        }
+
+        .card {
+            margin-top: 25px;
+            padding: 30px;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .card.active {
+            background: #3498db;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        button {
+            padding: 10px 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 6px;
+            background: #222;
+            color: white;
+            cursor: pointer;
+        }
+
+        .dark {
+            background: #121212;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Interactive Website</h1>
+        <p>Mouse and keyboard events</p>
+
+        <button id="enable">Enable Hover</button>
+        <button id="disable">Disable Hover</button>
+        <button id="theme">Toggle Theme</button>
+
+        <div id="card" class="card">
+            Hover over me 🖱️
+        </div>
+
+        <input id="input" type="text" placeholder="Type something...">
+        <p id="output"></p>
+    </div>
+
+    <script>
+        const card = document.getElementById("card");
+        const enableBtn = document.getElementById("enable");
+        const disableBtn = document.getElementById("disable");
+        const themeBtn = document.getElementById("theme");
+        const input = document.getElementById("input");
+        const output = document.getElementById("output");
+
+        function activateCard() {
+            card.classList.add("active");
+        }
+
+        function deactivateCard() {
+            card.classList.remove("active");
+        }
+
+        enableBtn.addEventListener("click", () => {
+            card.addEventListener("mouseenter", activateCard);
+            card.addEventListener("mouseleave", deactivateCard);
+        });
+
+        disableBtn.addEventListener("click", () => {
+            card.removeEventListener("mouseenter", activateCard);
+            card.removeEventListener("mouseleave", deactivateCard);
+            card.classList.remove("active");
+        });
+
+        themeBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            document.getElementById("card").style.color = "black";
+        });
+
+        input.addEventListener("keydown", (e) => {
+            output.textContent = "Key pressed: " + e.key;
+        });
+    </script>
+
+</body>
+
+</html>

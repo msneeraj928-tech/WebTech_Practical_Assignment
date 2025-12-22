@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DOM Playground</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.container {
+  width: 450px;
+  margin: 70px auto;
+  text-align: center;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 14px;
+  margin: 6px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+li {
+  padding: 12px;
+  margin: 8px 0;
+  background: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.active {
+  background: #3498db;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>DOM Manipulation</h1>
+  <p>Create, modify, and remove elements</p>
+
+  <div class="controls">
+    <button id="add">Add Item</button>
+    <button id="remove">Remove Last</button>
+    <button id="clear">Clear All</button>
+  </div>
+
+  <ul id="list"></ul>
+</div>
+
+<script>
+const list = document.getElementById("list");
+const addBtn = document.getElementById("add");
+const removeBtn = document.getElementById("remove");
+const clearBtn = document.getElementById("clear");
+
+addBtn.addEventListener("click", () => {
+  const li = document.createElement("li");
+  const text = document.createElement("span");
+  const btn = document.createElement("button");
+
+  const number = list.children.length + 1;
+
+  text.textContent = "Item " + number;
+  btn.textContent = "Toggle";
+
+  btn.addEventListener("click", () => {
+    li.classList.toggle("active");
+  });
+
+  li.appendChild(text);
+  li.appendChild(btn);
+  list.appendChild(li);
+});
+
+removeBtn.addEventListener("click", () => {
+  if (list.lastChild) {
+    list.removeChild(list.lastChild);
+  }
+});
+
+clearBtn.addEventListener("click", () => {
+  list.innerHTML = "";
+});
+</script>
+
+</body>
+</html>

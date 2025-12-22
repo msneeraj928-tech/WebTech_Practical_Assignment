@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dynamic Toggle Site</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #222;
+  color: #fff;
+}
+
+.box {
+  margin-top: 25px;
+  padding: 20px;
+  background: #3498db;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.dark {
+  background: #121212;
+  color: #fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Interactive Website</h1>
+  <p>Dynamic show, hide, and theme toggle</p>
+
+  <button onclick="toggleBox()">Show / Hide Box</button>
+  <button onclick="toggleTheme()">Toggle Theme</button>
+
+  <div id="box" class="box">
+    Hello, I’m alive ⚡
+  </div>
+</div>
+
+<script>
+function toggleBox() {
+  document.getElementById("box").classList.toggle("hidden");
+}
+
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
