@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.5.css">
+</head>
+<body>
+<p id="para">
+    This is a sample paragraph to test JavaScript in HTML for the first time.
+</p>
+<button onclick="changeTextandColor()" id="btn1">Click me!</button><br>
+<img id="img" src="peakpx.jpg"><br>
+<button onclick="hidePhoto()" id="btn2">Click here!</button>
+<ol id="orderedlist">
+ <p id="paragraph">This an ordered list:</p> 
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+</ol>
+<button onclick="changeBackground()" id="btn3">CLICK ME!😝</button>
+<script>
+    function changeTextandColor(){
+        document.getElementById("para").innerText = 
+        "Welcome to JavaScript, So you click the button, I can see you movin!";
+        document.getElementById("para").style.color = "white";
+        let heading = document.querySelector("#paragraph");
+        heading.innerHTML = "<b>This is an ordered list:</b>";
+    }
+    function hidePhoto(){
+        document.getElementById("img").style.display = "none";
+    }
+    function changeBackground(){
+        document.getElementById("orderedlist").style.backgroundColor = "lightcoral";
+    }
+</script>
+</body>
+</html>

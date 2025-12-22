@@ -1,0 +1,37 @@
+    body{
+        background-color: antiquewhite;
+        font: bolder;
+    }
+    #para{
+        display: flex;
+        border: 2px solid black;
+        background-color: coral;
+        border-radius: 25px;
+    }
+    #img{
+        height: 300px;
+        width: auto;
+    }
+    #orderedlist{
+        display: flex;
+        background-color: steelblue;
+        border: 2px solid black;
+        flex-direction: column;
+        width: 150px;
+        margin-left: 0%;
+        align-items: left;
+    }
+    li{
+        display: flex;
+        background-color: whitesmoke;
+        border: 2px solid black;
+        flex-direction: column;
+        width: 30%;
+    }
+    #paragraph{
+        display: flex;
+        background-color: whitesmoke;
+        border: 2px solid black;
+        flex-direction: column;
+        width: fit-content;
+    }

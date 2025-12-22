@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="1.4.css">
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form id="myForm" onsubmit="return validateForm()"> 
+        Username:
+        <input type="text" id="username" oninput="liveCheck()">
+        <br><br>
+
+        Password:
+        <input type="password" id="password">
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function liveCheck() {
+            let user = document.getElementById("username").value;
+
+            if (user.length < 3) {
+                console.log("Username must be at least 3 characters");
+            } else {
+                console.log("Looks good!");
+            }
+        }
+
+        function validateForm() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+
+            if (user === "" || pass === "") {
+                alert("All fields are required!");
+                return false;
+            }
+
+            if (user.length < 3) {
+                alert("Username must be at least 3 characters!");
+                return false;
+            }
+
+            if (pass.length < 5) {
+                alert("Password must be at least 5 characters!");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>

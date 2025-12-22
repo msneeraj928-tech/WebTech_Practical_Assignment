@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic HTML Form</title>
+    <style>
+        form{
+            border: 2px solid black;
+            width: fit-content;
+            padding: 20px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h2 align="center">Personal details Form</h2>
+
+<form>
+    <fieldset>
+        <legend>Fill the details:</legend>
+    <label>Name:</label>
+    <input type="text" name="username"><br><br>
+
+    <label>Email:</label>
+    <input type="text" name="email"><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="size" value="small"> Male<br>
+    <input type="radio" name="size" value="medium"> Female<br>
+    <input type="radio" name="size" value="large"> Other<br><br>
+
+    <label>Skills:</label><br>
+    <input type="checkbox" name="skill1"> Python<br>
+    <input type="checkbox" name="skill2"> Webdevelopment<br>
+    <input type="checkbox" name="skill3"> C lang<br>
+    <input type="checkbox" name="skill4"> SQL<br>
+
+    <label>Current year:</label>
+    <select name="quantity">
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4th</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</fieldset>
+</form>
+
+</body>
+</html>

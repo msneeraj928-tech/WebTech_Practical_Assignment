@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+        /* ID Selector */
+        #main-heading {
+            color: darkblue;
+            text-align: center;
+        }
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+        /* Descendant Selector */
+        .container p {
+            color: green;
+        }
+        /* Group Selector */
+        h2, h3 {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="main-heading">CSS Selectors Demonstration</h1><hr>
+
+    <h2>Class Selector Example</h2>
+    <p class="highlight">This paragraph uses a class selector (.highlight).</p><hr>
+
+    <h3>ID Selector Example</h3>
+    <p>The heading at the top uses an ID selector (#main-heading).</p><hr>
+
+    <h2>Descendant Selector Example</h2>
+    <div class="container">
+        <p>This is styled using a descendant selector (.container p).</p>
+    </div><hr>
+
+    <h2>Group Selector Example</h2>
+    <p>Both H2 and H3 headings share the same color using a group selector.</p>
+
+</body>
+</html>
