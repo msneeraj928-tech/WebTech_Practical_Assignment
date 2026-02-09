@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M Sai Neeraj | Cybersecurity-Focused Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+html{scroll-behavior:smooth}
+body{background:#020617;color:#e5e7eb}
+
+/* HERO */
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:0 12%;
+background:radial-gradient(circle at top,#0f172a, #020617 60%);
+}
+.hero h1{
+font-size:3.8rem;
+font-weight:700;
+letter-spacing:-1px;
+}
+.hero span{color:#38bdf8}
+.hero p{
+margin-top:18px;
+font-size:1.25rem;
+color:#94a3b8;
+max-width:620px;
+line-height:1.6;
+}
+.cta{
+margin-top:30px;
+display:flex;
+gap:16px;
+}
+.btn{
+padding:12px 26px;
+border-radius:10px;
+border:1px solid #38bdf8;
+background:transparent;
+color:#38bdf8;
+cursor:pointer;
+font-weight:600;
+transition:.25s;
+}
+.btn:hover{
+background:#38bdf8;
+color:#020617;
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 12%;
+}
+
+.section-title{
+font-size:2.2rem;
+margin-bottom:40px;
+color:white;
+}
+
+/* ABOUT */
+.about{
+max-width:750px;
+color:#94a3b8;
+font-size:1.05rem;
+line-height:1.8;
+}
+
+/* SKILLS */
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:30px;
+}
+.skill{
+padding:8px 16px;
+border-radius:999px;
+background:#0f172a;
+border:1px solid #1e293b;
+font-weight:500;
+transition:.2s;
+}
+.skill:hover{
+border-color:#38bdf8;
+color:#38bdf8;
+}
+
+/* PROJECTS */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px;
+}
+.card{
+background:#0b1220;
+padding:26px;
+border-radius:16px;
+border:1px solid #111827;
+transition:.25s;
+}
+.card:hover{
+transform:translateY(-6px);
+border-color:#38bdf8;
+}
+.card h3{margin-bottom:10px}
+.card p{color:#94a3b8;font-size:.95rem}
+
+/* CONTACT */
+.contact-box{
+background:#0b1220;
+padding:30px;
+border-radius:16px;
+border:1px solid #111827;
+max-width:500px;
+}
+.contact-box a{
+color:#38bdf8;
+text-decoration:none;
+display:block;
+margin-top:10px;
+}
+
+footer{
+text-align:center;
+padding:35px;
+color:#64748b;
+border-top:1px solid #0f172a;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{font-size:2.6rem}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<h1>M Sai Neeraj<span>.</span></h1>
+<p>Building secure digital systems for the future. 1st Year B.Tech CSE (Section G) student transitioning into cybersecurity with a strong foundation in programming, web technologies, and problem solving.</p>
+<div class="cta">
+<a href="#projects"><button class="btn">View Work</button></a>
+<a href="#contact"><button class="btn">Contact</button></a>
+</div>
+</div>
+
+<section>
+<h2 class="section-title">About</h2>
+<p class="about">
+I am a 1st Year B.Tech Computer Science student (Section G) focused on growing into a cybersecurity professional. My journey in technology is driven by curiosity about how systems work, how they break, and how they can be protected. Currently strengthening my fundamentals in programming, version control, and web development while steadily moving toward security engineering.
+<br><br>
+My long-term goal is to build highly secure, resilient systems and contribute to organizations where security is mission-critical.
+</p>
+
+<div class="skills">
+<div class="skill">C</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">Git</div>
+<div class="skill">IT Support</div>
+<div class="skill">Networking Fundamentals</div>
+<div class="skill">Cybersecurity (Learning)</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>GitHub Portfolio</h3>
+<p>A collection of my academic and beginner projects demonstrating consistent learning and hands-on development.</p>
+<a href="https://github.com/msneeraj928-tech" target="_blank">View Repository →</a>
+</div>
+
+<div class="card">
+<h3>Student Management System</h3>
+<p>C-based application using file handling to manage student records efficiently.</p>
+</div>
+
+<div class="card">
+<h3>Responsive Web Pages</h3>
+<p>Modern web interfaces built with HTML and CSS focusing on structure, responsiveness, and clean UI.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="contact-box">
+<p>Open to internships, collaborations, and learning opportunities.</p>
+<a href="mailto:msneeraj928@gmail.com">msneeraj928@gmail.com</a>
+<a href="https://github.com/msneeraj928-tech" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/sai-neeraj-/" target="_blank">LinkedIn</a>
+</div>
+</section>
+
+<footer>
+© 2026 M Sai Neeraj. Built with precision.
+</footer>
+
+</body>
+</html>
