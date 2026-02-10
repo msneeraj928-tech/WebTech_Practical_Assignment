@@ -40,53 +40,28 @@ To understand and implement the fundamental concepts of HTML, CSS, JavaScript, D
 
 ## 📚 Experiments Overview
 
-### 📄 UNIT – 1: HTML
-
-| Experiment | Description | Key Concepts |
-|-----------|-------------|--------------|
-| **Experiment 1** | Created a basic HTML web page using headings, paragraphs, and text formatting tags | `<h1>-<h6>`, `<p>`, `<b>`, `<i>`, `<u>`, `<strong>`, `<em>` |
-| **Experiment 2** | Designed a webpage demonstrating links, images, and lists | `<a>`, `<img>`, `<ul>`, `<ol>`, nested lists |
-| **Experiment 3** | Created a table-based layout with merged cells, alignment, and caption | `<table>`, `colspan`, `rowspan`, `<caption>`, alignment |
-| **Experiment 4** | Designed an HTML form with various input elements | `<form>`, text inputs, radio, checkbox, select, submit/reset |
-| **Experiment 5** | Built a structured webpage using semantic HTML5 elements | `<article>`, `<section>`, `<nav>`, `<aside>`, `<footer>` |
-
-### 🎨 UNIT – 2: CSS
-
-| Experiment | Description | Key Concepts |
-|-----------|-------------|--------------|
-| **Experiment 1** | Applied different types of CSS styles | Inline, Internal, and External CSS |
-| **Experiment 2** | Styled webpages using the CSS Box Model | Background images, borders, margins, padding |
-| **Experiment 3** | Demonstrated various CSS selectors | Class, ID, descendant, group, universal selectors |
-| **Experiment 4** | Created a responsive webpage | Media queries, mobile-first design approach |
-| **Experiment 5** | Used layout elements for precise styling | `<div>` and `<span>` elements |
-
-### 💻 UNIT – 3: JavaScript
-
-| Experiment | Description | Key Concepts |
-|-----------|-------------|--------------|
-| **Experiment 1** | Performed basic arithmetic operations using user input | Variables, operators, `prompt()`, `document.write()` |
-| **Experiment 2** | Demonstrated conditional statements and loops | `if-else`, `switch`, `for`, `while`, `do-while` |
-| **Experiment 3** | Created and invoked user-defined functions | Function declaration, scope (`var`, `let`, `const`) |
-| **Experiment 4** | Implemented form validation using JavaScript events | `onsubmit`, `oninput`, `alert()`, validation logic |
-
-### 🧩 UNIT – 4: DOM & Canvas
-
-| Experiment | Description | Key Concepts |
-|-----------|-------------|--------------|
-| **Experiment 1** | Demonstrated DOM manipulation methods | `getElementById()`, `querySelector()`, `innerHTML` |
-| **Experiment 2** | Showed and hid HTML elements dynamically | CSS class toggling, `display` property manipulation |
-| **Experiment 3** | Added interactivity using event listeners | `addEventListener`, `removeEventListener` |
-| **Experiment 4** | Created and manipulated elements dynamically | `createElement`, `appendChild`, `removeChild` |
-| **Experiment 5** | Created simple drawings using Canvas | `<canvas>` element, drawing shapes and paths |
-
-### 🚀 UNIT – 5: Git & Deployment
-
-| Task | Description | Status |
-|------|-------------|--------|
-| **Git Initialization** | Initialized a Git repository for version control | ✅ Complete |
-| **Version Control** | Committed project changes with meaningful messages | ✅ Complete |
-| **Remote Push** | Pushed the repository to GitHub | ✅ Complete |
-| **Deployment** | Deployed personal portfolio website using Netlify | ✅ [Live](https://m-sai-neeraj-portfolio.netlify.app/) |
+| # | Experiment | Description | Category |
+|---|-----------|-------------|----------|
+| **1** | Basic HTML Page | Created a basic HTML web page using headings, paragraphs, and text formatting tags | 📄 HTML |
+| **2** | Links, Images & Lists | Designed a webpage demonstrating links, images, and ordered/unordered/nested lists | 📄 HTML |
+| **3** | Table Layout | Created a table-based layout with merged cells, alignment, and caption | 📄 HTML |
+| **4** | HTML Forms | Designed an HTML form with text inputs, radio buttons, checkboxes, select menus, and buttons | 📄 HTML |
+| **5** | Semantic HTML | Built a structured webpage using semantic elements (article, section, nav, aside, footer) | 📄 HTML |
+| **6** | CSS Styling Types | Applied Inline, Internal, and External CSS styles | 🎨 CSS |
+| **7** | Box Model & Styling | Styled webpages using Box Model, background images, borders, margins, and padding | 🎨 CSS |
+| **8** | CSS Selectors | Demonstrated various CSS selectors (class, id, descendant, group, universal) | 🎨 CSS |
+| **9** | Responsive Design | Created a responsive webpage using media queries and mobile-first design | 🎨 CSS |
+| **10** | Div & Span Layouts | Used div and span elements for layout and styling | 🎨 CSS |
+| **11** | Arithmetic Operations | Performed basic arithmetic operations using user input | 💻 JavaScript |
+| **12** | Conditionals & Loops | Demonstrated conditional statements and looping constructs (for, while, do-while) | 💻 JavaScript |
+| **13** | Functions & Scope | Created and invoked user-defined functions; demonstrated scope using var, let, and const | 💻 JavaScript |
+| **14** | Form Validation | Implemented form validation using JavaScript events (onsubmit, oninput) and alert() | 💻 JavaScript |
+| **15** | DOM Manipulation | Demonstrated DOM manipulation using getElementById(), querySelector(), and innerHTML | 🧩 DOM |
+| **16** | Dynamic Elements | Showed and hid HTML elements dynamically and toggled CSS classes | 🧩 DOM |
+| **17** | Event Listeners | Added interactivity using event listeners (addEventListener, removeEventListener) | 🧩 DOM |
+| **18** | Dynamic Creation | Created and manipulated elements dynamically (append, remove, modify child nodes) | 🧩 DOM |
+| **19** | Canvas Graphics | Created simple drawings using the `<canvas>` element | 🧩 Canvas |
+| **20** | Git & Deployment | Initialized Git repository, committed changes, pushed to GitHub, and deployed portfolio | 🚀 Git |
 
 ---
 
@@ -138,7 +113,7 @@ As the final deliverable, I created a **modern, cybersecurity-themed personal po
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - Git installed on your system
-- Text editor (VS Code, Sublime Text, etc.)
+- Text editor (VS Code, Sublime Text, etc.) - optional
 
 ### Clone the Repository
 
@@ -147,82 +122,33 @@ git clone https://github.com/msneeraj928-tech/WebTech_Practical_Assignment.git
 cd WebTech_Practical_Assignment
 ```
 
-### Running Individual Experiments
+### Running Experiments
 
-Each unit contains separate HTML files for different experiments. Simply open any HTML file in your browser:
+Simply open any experiment HTML file in your browser:
 
 ```bash
-# Navigate to specific unit
-cd Unit-1
-
-# Open experiment in browser
 # On Windows
-start experiment1.html
+start 1.html
 
 # On macOS
-open experiment1.html
+open 1.html
 
 # On Linux
-xdg-open experiment1.html
+xdg-open 1.html
 ```
 
 ### Running Portfolio Locally
 
-```bash
-# Navigate to portfolio folder
-cd portfolio
+Use a local server for the best experience:
 
-# Open in browser or use local server
+```bash
+# Using Python
 python -m http.server 8000
-# OR
+
+# Using Node.js
 npx http-server
 
-# Visit http://localhost:8000
-```
-
----
-
-## 📁 Project Structure
-
-```
-WebTech_Practical_Assignment/
-│
-├── Unit-1-HTML/
-│   ├── experiment1.html          # Basic HTML webpage
-│   ├── experiment2.html          # Links, images, and lists
-│   ├── experiment3.html          # Tables with merged cells
-│   ├── experiment4.html          # HTML forms
-│   └── experiment5.html          # Semantic HTML elements
-│
-├── Unit-2-CSS/
-│   ├── experiment1.html          # Inline, internal, external CSS
-│   ├── experiment2.html          # Box model and styling
-│   ├── experiment3.html          # CSS selectors
-│   ├── experiment4.html          # Responsive design
-│   ├── experiment5.html          # Div and span layouts
-│   └── styles/                   # External CSS files
-│
-├── Unit-3-JavaScript/
-│   ├── experiment1.html          # Arithmetic operations
-│   ├── experiment2.html          # Conditionals and loops
-│   ├── experiment3.html          # Functions and scope
-│   ├── experiment4.html          # Form validation
-│   └── scripts/                  # External JS files
-│
-├── Unit-4-DOM-Canvas/
-│   ├── experiment1.html          # DOM manipulation
-│   ├── experiment2.html          # Show/hide elements
-│   ├── experiment3.html          # Event listeners
-│   ├── experiment4.html          # Dynamic element creation
-│   └── experiment5.html          # Canvas drawings
-│
-├── portfolio/                     # Final deployment project
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── profile.jpg
-│
-└── README.md                      # This file
+# Then visit http://localhost:8000
 ```
 
 ---
