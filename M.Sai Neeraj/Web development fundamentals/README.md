@@ -266,6 +266,6 @@ This project is created for academic purposes as part of the Web Technology Lab 
                        |___/                                      
 ```
 
-**All experiments completed ✅**
+**All experiments completed!**
 
 </div>
